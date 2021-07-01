@@ -362,21 +362,22 @@
         </div>
     </footer>
 
-   
-
     <div class="modal is-hidden" id="madal" data-modal>
         <div class="modal-content" id="modal-content">
-            <button class="btnclose" data-modal-close type="button">x</button>
+            <button class="btnclose" data-modal-close type="button"><a href="" class="link black-blue-close"> x
+                <svg class="modal-button-close-icon" width="18" height="18" viewBox="0 0 32 32"> 
+                    <use href="./image/symbol-defs.svg#icon-close-black-blue"></use>
+                </svg></a>
+                </button>
             <form class="modal-form">
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                     <label class="modal-form-field">Имя
                         <div class="modal-form-field-wrapper">
                             <input type="text" minlength="2" name="user-name" class="modal-form-input" placeholder=" " required/>
-                        <svg class="modal-form-icon" width="18" height="18" viewBox="0 0 32 32">
+                        <svg class="modal-form-icon" width="18" height="18" viewBox="0 0 32 32"> 
                             <use href="./images/symbol-defs.svg#icon-person"></use>
                         </svg>
                     </div>
-                        
                     </label>
                     <label class="modal-form-field">Телефон
                         <div class="modal-form-field-wrapper">
@@ -399,14 +400,13 @@
                     </label>
                     <div class="comun">
                     <input type="checkbox" name="user-agree" id="checkbox"  class="modal-form-check" required> 
-            <label for="checkbox" class="modal-form-check-accept">Соглашаюсь с рассылкой и принимаю <a href="" class="link modal-form-check-info">Условия договора</a> 
             <span class="modal-form-check-wrap">
                 <svg class="modal-form-icon" width="16" height="15" viewBox="0 0 32 32">
-                    <use href="./images/symbol-defs.svg#icon-icon-check"></use>
+                    <use href="./images/symbol-defs.svg#icon-icon-check-empty"></use>
                 </svg>
             </span>
-            </label>
-            </div>
+                    <label for="checkbox" class="modal-form-check-accept">Соглашаюсь с рассылкой и принимаю <a href="" class="link modal-form-check-info">Условия договора</a></label>
+                    </div>
             <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
         </div>
