@@ -928,7 +928,7 @@ button.btnclose:focus + .modal-button-close-icon {
 }
 .modal-form-check:checked + .modal-form-check-wrap .modal-form-icon-check {
   background-color: var(--accent-color);
-  background-image: url(./images/symbol-defs-galochkasvg.svg);
+  background-image: url(./images/icon-check-ipg);
   background-size: contain;
 }
 label.modal-form-check-accept {
