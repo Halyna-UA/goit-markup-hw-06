@@ -749,7 +749,6 @@ h1 {
   max-width: 528px;
   width: 100%;
   max-height: 581px;
-  height: 100%;
   background-color: var(--primery-br-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -762,6 +761,7 @@ h1 {
   top: 8px;
   right: 8px;
   background-color: var(--primery-br-color);
+  color: #000;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -770,46 +770,22 @@ h1 {
   justify-content: center;
   padding: 6px;
   transition: transform var(--transition);
-  transition-property: fill;
+  transition-property: color;
 }
 
 
 .btnclose:hover,
 .btnclose:focus{
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
-/*
-.btnclose:hover,
-.btnclose:focus{
-  fill: var(--accent-color);
-  background-image: url(./image/close-biue-x.jpg);
-}
-
-.btnclose:hover,
-.btnclose:focus + .modal-button-close-icon {
-  fill: var(--accent-color);
-}
-
-button.btnclose:hover,
-button.btnclose:focus + .modal-button-close-icon {
-  fill: var(--accent-color);
-}
-
-button.btnclose:hover,
-button.btnclose:focus + .modal-button-close-icon {
-  fill: var(--accent-color);
-  background-image: url(../images/close-blue-button.svg);
-  background-size: contain;
-}
-*/
 .modal-button-close-icon {
   display: flex;
   width: 100%;
   height: 18px;
   align-items: center;
   justify-content: center;
-  fill: #000;
+  fill: currentColor;
   transition: transform var(--transition);
   transition-property: fill;
 }
@@ -914,15 +890,6 @@ button.btnclose:focus + .modal-button-close-icon {
 .modal-form-check{
   appearance: none;
   position: absolute;
-  
-}
-.modal-form-icon-check {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  
 }
 
 .modal-form-check-wrap {
@@ -931,20 +898,20 @@ button.btnclose:focus + .modal-button-close-icon {
   display: inline-block;
   margin-right: 7px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-color: rgba(33, 33, 33, 0.2);
+  
   border-radius: 4px;
   outline: none;
   transition: transform var(--transition);
-  transition-property: background-color, background-image;
+  transition-property: border-color, background-image;
 }
 
 .modal-form-check:focus + .modal-form-check-wrap{
   border-color: var(--accent-color);
   
 }
-.modal-form-check:checked + .modal-form-check-wrap .modal-form-icon-check {
-  background-color: var(--accent-color);
-  background-image: url(./images/icon-check-ipg);
+.modal-form-check:checked + .modal-form-check-wrap {
+  
+  background-image: url(../images/icon-check-ipg.jpg);
   background-size: contain;
 }
 label.modal-form-check-accept {
